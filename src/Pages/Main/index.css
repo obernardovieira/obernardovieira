@@ -1,0 +1,38 @@
+.main-content {
+    margin: 4% 15%;
+    height: 520px;
+}
+
+.text-content {
+    float: right;
+    max-width: 870px;
+    max-height: 530px;
+    padding: 45px;
+}
+
+.picture {
+    width: 360px;
+    max-height: 530px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+}
+
+.grey-box {
+    width: 700px;
+    height: 350px;
+    background-color: #e6e6e696;
+    position: absolute;
+    top: 170px;
+    left: 855px;
+    z-index: -1;
+}
+
+.social-media {
+
+}
+
+.social-logo {
+    height: 50px;
+}
