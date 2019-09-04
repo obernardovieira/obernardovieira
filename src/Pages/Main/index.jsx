@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ReactTooltip from 'react-tooltip'
+
 import profile from '../../Assets/profile.jpg';
 import twitterLogo from '../../Assets/twitter.svg';
 import linkedinLogo from '../../Assets/linkedin.svg';
@@ -10,7 +12,9 @@ import './index.css';
 class Main extends Component {
     state = {
         hello: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in sollicitudin arcu.',
-        me: 'Vivamus elementum lectus pharetra ligula egestas, ut vestibulum magna ullamcorper. Quisque nec nisi in nulla molestie interdum. Vestibulum id semper odio. Vestibulum quam mauris, sagittis id hendrerit ut, aliquam lacinia orci. Fusce laoreet blandit erat, vel congue purus sagittis nec.',
+        me: 'Vivamus elementum lectus pharetra ligula egestas, ut vestibulum magna ullamcorper. '
+            + 'Quisque nec nisi in nulla molestie interdum. Vestibulum id semper odio. Vestibulum quam mauris, '
+            + 'sagittis id hendrerit ut, aliquam lacinia orci. Fusce laoreet blandit erat, vel congue purus sagittis nec.',
     }
 
     /**
@@ -29,19 +33,20 @@ class Main extends Component {
                     <p style={{ padding: '50px' }}>{me}</p>
                     <div className="social-media">
                         <a href="https://twitter.com/obernardovieira">
-                            <img className="social-logo" src={twitterLogo} alt="twitter logo" />
+                            <img data-tip="Find me on Twitter" className="social-logo" src={twitterLogo} alt="twitter logo" />
                         </a>
                         <a href="https://www.linkedin.com/in/obernardovieira/">
-                            <img className="social-logo" src={linkedinLogo} alt="linkedin logo" />
+                            <img data-tip="Find me on LinkedIn" className="social-logo" src={linkedinLogo} alt="linkedin logo" />
                         </a>
                         <a href="https://github.com/obernardovieira">
-                            <img className="social-logo" src={githubLogo} alt="github logo" />
+                            <img data-tip="Find me on GitHub" className="social-logo" src={githubLogo} alt="github logo" />
                         </a>
                         <a href="mailto:bernardo@techhq.io">
-                            <img className="social-logo" src={envelope} alt="envelope logo" />
+                            <img data-tip="Send me an Email" className="social-logo" src={envelope} alt="envelope logo" />
                         </a>
                     </div>
                 </div>
+                <ReactTooltip />
             </div>
         );
     }
