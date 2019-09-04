@@ -6,25 +6,17 @@ import twitterLogo from '../../Assets/twitter.svg';
 import linkedinLogo from '../../Assets/linkedin.svg';
 import githubLogo from '../../Assets/github.svg';
 import envelope from '../../Assets/envelope.svg';
+import messages from './messages.json';
 import './index.css';
 
 
 class Main extends Component {
-    state = {
-        hello: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in sollicitudin arcu.',
-        me: 'Vivamus elementum lectus pharetra ligula egestas, ut vestibulum magna ullamcorper. '
-            + 'Quisque nec nisi in nulla molestie interdum. Vestibulum id semper odio. Vestibulum quam mauris, '
-            + 'sagittis id hendrerit ut, aliquam lacinia orci. Fusce laoreet blandit erat, vel congue purus sagittis nec.',
-        also: 'Mauris metus odio, iaculis sit amet leo sit amet, bibendum suscipit turpis. Pellentesque efficitur mauris '
-            + 'sit amet orci posuere, quis tincidunt turpis faucibus. Vivamus vehicula magna ut sapien faucibus, vitae faucibus '
-            + 'enim ultrices. Integer luctus gravida dolor porta pharetra.',
-    }
 
     /**
      * @ignore
      */
     render() {
-        const { hello, me, also } = this.state;
+        const { hello, me, also } = messages;
         return (
             <div className="main-content">
                 <div className="grey-box" />
