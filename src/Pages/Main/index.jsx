@@ -15,13 +15,16 @@ class Main extends Component {
         me: 'Vivamus elementum lectus pharetra ligula egestas, ut vestibulum magna ullamcorper. '
             + 'Quisque nec nisi in nulla molestie interdum. Vestibulum id semper odio. Vestibulum quam mauris, '
             + 'sagittis id hendrerit ut, aliquam lacinia orci. Fusce laoreet blandit erat, vel congue purus sagittis nec.',
+        also: 'Mauris metus odio, iaculis sit amet leo sit amet, bibendum suscipit turpis. Pellentesque efficitur mauris '
+            + 'sit amet orci posuere, quis tincidunt turpis faucibus. Vivamus vehicula magna ut sapien faucibus, vitae faucibus '
+            + 'enim ultrices. Integer luctus gravida dolor porta pharetra.',
     }
 
     /**
      * @ignore
      */
     render() {
-        const { hello, me } = this.state;
+        const { hello, me, also } = this.state;
         return (
             <div className="main-content">
                 <div className="grey-box" />
@@ -46,6 +49,7 @@ class Main extends Component {
                         </a>
                     </div>
                 </div>
+                <div className="also">{also}</div>
                 <ReactTooltip />
             </div>
         );
