@@ -81,13 +81,18 @@
     .my-title {
         font-size: 2rem !important;
     }
+
     .main-content {
         margin: 4% 7%;
         height: 520px;
     }
 
+    .picture {
+        width: 23rem;
+    }
+
     .text-content {
-        max-width: 520px;
+        max-width: 58%;
         max-height: 585px;
     }
 
@@ -98,7 +103,7 @@
     }
 
     .social-logo {
-        height: 35px;
+        width: 8%;
     }
 
     .social-media {
@@ -119,13 +124,12 @@
     }
 
     .article-img {
-        height: 150px;
-        max-width: 150px;
+        width: 11rem;
         float: left;
     }
 
     .article-info {
-        max-width: 290px;
+        max-width: 30%;
     }
 
     .secondary-message {
