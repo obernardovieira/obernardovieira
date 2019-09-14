@@ -25,8 +25,8 @@ class Main extends Component {
                     <img className="picture" src={profile} alt="obernardovieira profile" />
                 </div>
                 <div className="text-content">
-                    <h1 className="title is-1">{hello}</h1>
-                    <p style={{ padding: '50px' }}>{me}</p>
+                    <h1 className="title is-1 my-title main-message">{hello}</h1>
+                    <p className="secondary-message" >{me}</p>
                     <div className="social-media">
                         <a href="https://twitter.com/obernardovieira">
                             <img data-tip="Find me on Twitter" className="social-logo" src={twitterLogo} alt="twitter logo" />
@@ -43,7 +43,7 @@ class Main extends Component {
                     </div>
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                    <div className="working-on-title"><h1 className="title is-1">Have a look at what I've been working on</h1></div>
+                    <div className="working-on-title"><h1 className="title is-1 my-title">Have a look at what I've been working on</h1></div>
                 </div>
                 <div className="also">
                     <div>
