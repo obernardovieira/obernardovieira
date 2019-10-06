@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
-import envelope from '../../Assets/envelope.svg';
-import githubLogo from '../../Assets/github.svg';
-import hacker from '../../Assets/hacker.svg';
-import linkedinLogo from '../../Assets/linkedin.svg';
-import profile from '../../Assets/profile.jpg';
-import twitterLogo from '../../Assets/twitter.svg';
-import writer from '../../Assets/writer.svg';
+import envelope from '../../assets/envelope.svg';
+import githubLogo from '../../assets/github.svg';
+import hacker from '../../assets/hacker.svg';
+import linkedinLogo from '../../assets/linkedin.svg';
+import profile from '../../assets/profile.jpg';
+import twitterLogo from '../../assets/twitter.svg';
+import writer from '../../assets/writer.svg';
 import messages from './messages.json';
 
 import './index.css';
 
 
-class Main extends Component {
+class Home extends Component {
 
     public sendHackathons = (event: any) => {
         window.location.href = 'https://gist.github.com/obernardovieira/f4ec9b75736a98be5f6198f5ae40b897';
@@ -88,4 +88,4 @@ class Main extends Component {
     }
 }
 
-export default Main;
+export default Home;

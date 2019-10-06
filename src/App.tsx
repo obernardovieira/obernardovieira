@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import Main from './Pages/Main';
+const Home = React.lazy(() => import('./views/home')) as any;
 
-export default function App() {
+function App() {
     return (
         <div>
-            <Main />
+            <Suspense fallback={<div>Loading....</div>}>
+                <Router>
+                    <Home path="/" />
+                </Router>
+            </Suspense>
         </div>
     );
 }
+export default App;
