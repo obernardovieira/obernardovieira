@@ -16,7 +16,6 @@ class Navbar extends Component<{ navigateClick: any }, {}> {
                                 <ul>
                                     <li id="home" onClick={this.props.navigateClick}><a href="">Home</a></li>
                                     <li id="about" onClick={this.props.navigateClick}><a href="">About</a></li>
-                                    <li id="work" onClick={this.props.navigateClick}><a href="">Work</a></li>
                                     <li id="contact" onClick={this.props.navigateClick}><a href="">Contact</a></li>
                                 </ul>
                             </nav>
