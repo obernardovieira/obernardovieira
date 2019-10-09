@@ -57,6 +57,24 @@ class Contact extends Component {
                         </form>
                     </div>
                 </section>
+
+                <footer className="footer-section text-center">
+                    <div className="container">
+                        <div className="social-links">
+                            <a href=""><span className="fa fa-linkedin" /></a>
+                            <a href=""><span className="fa fa-instagram" /></a>
+                            <a href=""><span className="fa fa-github" /></a>
+                            <a href=""><span className="fa fa-twitter" /></a>
+                        </div>
+                        <div className="copyright">
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script>
+                            All rights reserved | This template is made
+                            with <i className="fa fa-heart-o" aria-hidden="true" /> by&nbsp;
+                            <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        </div>
+                    </div>
+                </footer>
             </div>
         );
     }
