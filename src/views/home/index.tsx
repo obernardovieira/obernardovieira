@@ -88,7 +88,8 @@ class Home extends Component {
 
     private generateArticlesView = () => {
         return this.loadArticlesData().map((article) => {
-            return (<div key={article.previewImage} className="mix col-lg-6 col-md-6">
+            const thisClassName = 'mix col-lg-' + article.width + ' col-md-6';
+            return (<div key={article.previewImage} className={thisClassName}>
                 <a
                     href={article.previewImage}
                     className="portfolio-item set-bg"
@@ -107,34 +108,42 @@ class Home extends Component {
             {
                 previewImage: portfolio1,
                 title: '+ See Project',
+                width: 6,
             },
             {
                 previewImage: portfolio2,
                 title: '+ See Project',
+                width: 6,
             },
             {
                 previewImage: portfolio3,
                 title: '+ See Project',
+                width: 4,
             },
             {
                 previewImage: portfolio4,
                 title: '+ See Project',
+                width: 4,
             },
             {
                 previewImage: portfolio5,
                 title: '+ See Project',
+                width: 4,
             },
             {
                 previewImage: portfolio6,
                 title: '+ See Project',
+                width: 12,
             },
             {
                 previewImage: portfolio7,
                 title: '+ See Project',
+                width: 6,
             },
             {
                 previewImage: portfolio8,
                 title: '+ See Project',
+                width: 6,
             },
         ];
     }
