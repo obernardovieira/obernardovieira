@@ -33,7 +33,7 @@ class Home extends Component {
                         <div className="row">
                             <div className="col-xl-10 offset-xl-1">
                                 <h2 className="section-title">
-                                    I’m a freelance <span>digital designer</span>, with +10 years of experience
+                                    I’m a <span>blockchain developer</span>, writer and public speaker
                                 </h2>
                             </div>
                         </div>
@@ -53,94 +53,7 @@ class Home extends Component {
                     </div>
                     <div className="container-fluid p-md-0 ">
                         <div className="row portfolios-area">
-                            <div className="mix col-lg-6 col-md-6 web">
-                                <a
-                                    href={portfolio1}
-                                    className="portfolio-item set-bg"
-                                    style={{ backgroundImage: 'url(' + portfolio1 + ')' }}
-                                >
-                                    <div className="pi-inner">
-                                        <h2>+ See Project</h2>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="mix col-lg-6 col-md-6 digital">
-                                <a
-                                    href={portfolio2}
-                                    className="portfolio-item set-bg"
-                                    style={{ backgroundImage: 'url(' + portfolio2 + ')' }}
-                                >
-                                    <div className="pi-inner">
-                                        <h2>+ See Project</h2>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="mix col-lg-4 col-md-6 web">
-                                <a
-                                    href={portfolio3}
-                                    className="portfolio-item set-bg"
-                                    style={{ backgroundImage: 'url(' + portfolio3 + ')' }}
-                                >
-                                    <div className="pi-inner">
-                                        <h2>+ See Project</h2>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="mix col-lg-4 col-md-6 digital">
-                                <a
-                                    href={portfolio4}
-                                    className="portfolio-item set-bg"
-                                    style={{ backgroundImage: 'url(' + portfolio4 + ')' }}
-                                >
-                                    <div className="pi-inner">
-                                        <h2>+ See Project</h2>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="mix col-lg-4 col-md-6 rened">
-                                <a
-                                    href={portfolio5}
-                                    className="portfolio-item set-bg"
-                                    style={{ backgroundImage: 'url(' + portfolio5 + ')' }}
-                                >
-                                    <div className="pi-inner">
-                                        <h2>+ See Project</h2>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="mix col-lg-12 col-md-6 brand">
-                                <a
-                                    href={portfolio6}
-                                    className="portfolio-item set-bg"
-                                    style={{ backgroundImage: 'url(' + portfolio6 + ')' }}
-                                >
-                                    <div className="pi-inner">
-                                        <h2>+ See Project</h2>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="mix col-lg-6 col-md-6 rened">
-                                <a
-                                    href={portfolio7}
-                                    className="portfolio-item set-bg"
-                                    style={{ backgroundImage: 'url(' + portfolio7 + ')' }}
-                                >
-                                    <div className="pi-inner">
-                                        <h2>+ See Project</h2>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="mix col-lg-6 col-md-6 brand">
-                                <a
-                                    href={portfolio8}
-                                    className="portfolio-item set-bg"
-                                    style={{ backgroundImage: 'url(' + portfolio8 + ')' }}
-                                >
-                                    <div className="pi-inner">
-                                        <h2>+ See Project</h2>
-                                    </div>
-                                </a>
-                            </div>
+                            {this.generateArticlesView()}
                         </div>
                     </div>
                 </section>
@@ -171,6 +84,59 @@ class Home extends Component {
                 </footer>
             </div>
         );
+    }
+
+    private generateArticlesView = () => {
+        return this.loadArticlesData().map((article) => {
+            return (<div key={article.previewImage} className="mix col-lg-6 col-md-6">
+                <a
+                    href={article.previewImage}
+                    className="portfolio-item set-bg"
+                    style={{ backgroundImage: 'url(' + article.previewImage + ')' }}
+                >
+                    <div className="pi-inner">
+                        <h2>{article.title}</h2>
+                    </div>
+                </a>
+            </div>);
+        });
+    }
+
+    private loadArticlesData = () => {
+        return [
+            {
+                previewImage: portfolio1,
+                title: '+ See Project',
+            },
+            {
+                previewImage: portfolio2,
+                title: '+ See Project',
+            },
+            {
+                previewImage: portfolio3,
+                title: '+ See Project',
+            },
+            {
+                previewImage: portfolio4,
+                title: '+ See Project',
+            },
+            {
+                previewImage: portfolio5,
+                title: '+ See Project',
+            },
+            {
+                previewImage: portfolio6,
+                title: '+ See Project',
+            },
+            {
+                previewImage: portfolio7,
+                title: '+ See Project',
+            },
+            {
+                previewImage: portfolio8,
+                title: '+ See Project',
+            },
+        ];
     }
 }
 
