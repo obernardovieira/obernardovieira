@@ -1,11 +1,50 @@
 import React, { Component } from 'react';
 
+interface IContactState {
+    name: string;
+    email: string;
+    subject: string;
+    where: string;
+    message: string;
+}
+class Contact extends Component<{}, IContactState> {
 
-class Contact extends Component {
+    constructor(props: any) {
+        super(props);
+        this.state = {
+            email: '',
+            message: '',
+            name: '',
+            subject: '',
+            where: '',
+        };
+    }
+
+    public handleSubmitMessage = (event: React.FormEvent<HTMLFormElement>) => {
+        const { name, email, subject, where, message } = this.state;
+        console.log(this.state);
+        event.preventDefault();
+    }
+
+    public handleChangeMessage = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        if (event.currentTarget.name === 'name') {
+            this.setState({ name: event.currentTarget.value});
+        } else if (event.currentTarget.name === 'email') {
+            this.setState({ email: event.currentTarget.value});
+        } else if (event.currentTarget.name === 'subject') {
+            this.setState({ subject: event.currentTarget.value});
+        } else if (event.currentTarget.name === 'where') {
+            this.setState({ where: event.currentTarget.value});
+        } else if (event.currentTarget.name === 'message') {
+            this.setState({ message: event.currentTarget.value});
+        }
+    }
+
     /**
      * @ignore
      */
     public render() {
+        const { name, email, subject, where, message } = this.state;
         return (
             <div>
                 <section className="intro-section">
@@ -13,7 +52,7 @@ class Contact extends Component {
                         <div className="row">
                             <div className="col-xl-10 offset-xl-1">
                                 <h2 className="section-title">
-                                    I’m a freelance <span>digital designer</span>, with +10 years of experience
+                                    I’m a <span>blockchain developer</span>, writer and public speaker
                                 </h2>
                             </div>
                         </div>
@@ -30,25 +69,54 @@ class Contact extends Component {
                                     Integer sit amet pharetra nisl.
                                     Vestibulum sollicitudin leo non purus vestibulum placerat.
                                     Curabitur ac erat sollicitudin, blandit quam vitae.
-                    </p>
+                                </p>
                             </div>
                         </div>
-                        <form className="contact-form">
+                        <form className="contact-form" onSubmit={this.handleSubmitMessage}>
                             <div className="row">
                                 <div className="col-md-6">
-                                    <input type="text" placeholder="Name" />
+                                    <input
+                                        type="text"
+                                        placeholder="Name"
+                                        name="name"
+                                        value={name}
+                                        onChange={this.handleChangeMessage}
+                                    />
                                 </div>
                                 <div className="col-md-6">
-                                    <input type="text" placeholder="E-mail" />
+                                    <input
+                                        type="email"
+                                        placeholder="E-mail"
+                                        name="email"
+                                        value={email}
+                                        onChange={this.handleChangeMessage}
+                                    />
                                 </div>
                                 <div className="col-md-6">
-                                    <input type="text" placeholder="Subject" />
+                                    <input
+                                        type="text"
+                                        placeholder="Subject"
+                                        name="subject"
+                                        value={subject}
+                                        onChange={this.handleChangeMessage}
+                                    />
                                 </div>
                                 <div className="col-md-6">
-                                    <input type="text" placeholder="How did you hear about us?" />
+                                    <input
+                                        type="text"
+                                        placeholder="How did you hear about me?"
+                                        name="where"
+                                        value={where}
+                                        onChange={this.handleChangeMessage}
+                                    />
                                 </div>
                                 <div className="col-md-12">
-                                    <textarea placeholder="Message" />
+                                    <textarea
+                                        placeholder="Message"
+                                        name="message"
+                                        value={message}
+                                        onChange={this.handleChangeMessage}
+                                    />
                                 </div>
                             </div>
                             <div className="text-center">
