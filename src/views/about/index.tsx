@@ -14,8 +14,8 @@ class About extends Component {
                         <div className="row">
                             <div className="col-xl-10 offset-xl-1">
                                 <h2 className="section-title">
-                                    I’m a freelance <span>digital designer</span>, with +10 years of experience
-                            </h2>
+                                    I’m a <span>blockchain developer</span>, writer and public speaker
+                                </h2>
                             </div>
                         </div>
                     </div>
@@ -26,27 +26,21 @@ class About extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet pharetra
-                                    nisl. Vestibulum sollicitudin leo non purus vestibulum placerat. Curabitur ac erat
-                                    sollicitudin, blandit quam vitae, rutrum diam. Aenean non gravida velit, eu
-                                    consectetur neque. Nullam in volutpat massa. Duis scelerisque urna non lectus
-                                    fringilla suscipit. Phasellus lacinia facilisis massa, pellentesque consectetur
-                                    nunc. Nullam elit metus, condimentum nec libero quis,
-                                dapibus malesuada enim. Morbi semper condimentum pellentesque. </p>
+                                <p>Hello, I'm Bernardo. A fulltime blockchain developer and explorer of the ecosystem.
+                                    Often joining hackathons and sometimes winning. I've been working as a developer
+                                    for a few years. Contributing to many open source projects and also maintaining
+                                    some. I also like IoT and to discuss the future of the economy and society.
+                                    Thinking about how can I improve the future fascinates me.
+                                </p>
                                 <div className="row mt-5">
                                     <div className="col-md-4">
                                         <div className="milestone">
-                                            <h2>56<span>Clients</span></h2>
+                                            <h2>30+<span>Projects</span></h2>
                                         </div>
                                     </div>
                                     <div className="col-md-4">
                                         <div className="milestone">
-                                            <h2>112<span>Projects</span></h2>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="milestone">
-                                            <h2>25<span>Collabs</span></h2>
+                                            <h2>5+<span>Collabs</span></h2>
                                         </div>
                                     </div>
                                 </div>
@@ -56,7 +50,7 @@ class About extends Component {
                             </div>
                             <div className="col-lg-5 offset-lg-1">
                                 <figure className="pic-frame">
-                                    <img src="img/about.jpg" alt="" />
+                                    <img src="https://gateway.pinata.cloud/ipfs/QmXoiiGhNUSyKuggbdVxG4G7XSb7caW9Hv39iaStJw4ppp" alt="obernardovieira;profile" />
                                 </figure>
                             </div>
                         </div>
@@ -68,10 +62,15 @@ class About extends Component {
                         <h2 className="section-title mb-5">Let’s work together</h2>
                         <a href="" className="site-btn">Get in touch</a>
                         <div className="social-links">
-                            <a href=""><span className="fa fa-linkedin" /></a>
-                            <a href=""><span className="fa fa-instagram" /></a>
-                            <a href=""><span className="fa fa-github" /></a>
-                            <a href=""><span className="fa fa-twitter" /></a>
+                            <a href="https://www.linkedin.com/in/obernardovieira/">
+                                <span className="fa fa-linkedin" />
+                            </a>
+                            <a href="https://github.com/obernardovieira">
+                                <span className="fa fa-github" />
+                            </a>
+                            <a href="https://twitter.com/obernardovieira">
+                                <span className="fa fa-twitter" />
+                            </a>
                         </div>
                         <div className="copyright">
                             Copyright &copy;

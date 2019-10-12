@@ -61,10 +61,15 @@ class Contact extends Component {
                 <footer className="footer-section text-center">
                     <div className="container">
                         <div className="social-links">
-                            <a href=""><span className="fa fa-linkedin" /></a>
-                            <a href=""><span className="fa fa-instagram" /></a>
-                            <a href=""><span className="fa fa-github" /></a>
-                            <a href=""><span className="fa fa-twitter" /></a>
+                            <a href="https://www.linkedin.com/in/obernardovieira/">
+                                <span className="fa fa-linkedin" />
+                            </a>
+                            <a href="https://github.com/obernardovieira">
+                                <span className="fa fa-github" />
+                            </a>
+                            <a href="https://twitter.com/obernardovieira">
+                                <span className="fa fa-twitter" />
+                            </a>
                         </div>
                         <div className="copyright">
                             Copyright &copy;
