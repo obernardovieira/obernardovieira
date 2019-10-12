@@ -6,12 +6,15 @@ class Navbar extends Component<{ navigateClick: any }, {}> {
     public render() {
         return (
             <header className="header-section">
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row">
-                        <div className="logo">
-                            <h2 className="site-logo">Riddle</h2>
+                        <div className="col-lg-4 col-md-3">
+                            <div className="logo">
+                                <h2 className="site-logo">Riddle</h2>
+                            </div>
                         </div>
-                        <div className="home-2 container text-left text-md-right">
+                        <div className="col-lg-8 col-md-9">
+                            <a href="" className="site-btn header-btn">Get in touch</a>
                             <nav className="main-menu">
                                 <ul>
                                     <li id="home" onClick={this.props.navigateClick}><a href="">Home</a></li>
@@ -20,7 +23,6 @@ class Navbar extends Component<{ navigateClick: any }, {}> {
                                 </ul>
                             </nav>
                         </div>
-                        <a href="" className="site-btn header-btn">Get in touch</a>
                     </div>
                 </div>
                 <div className="nav-switch">
