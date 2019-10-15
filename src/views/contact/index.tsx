@@ -22,21 +22,21 @@ class Contact extends Component<{}, IContactState> {
 
     public handleSubmitMessage = (event: React.FormEvent<HTMLFormElement>) => {
         const { name, email, subject, where, message } = this.state;
-        console.log(this.state);
+        //
         event.preventDefault();
     }
 
     public handleChangeMessage = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         if (event.currentTarget.name === 'name') {
-            this.setState({ name: event.currentTarget.value});
+            this.setState({ name: event.currentTarget.value });
         } else if (event.currentTarget.name === 'email') {
-            this.setState({ email: event.currentTarget.value});
+            this.setState({ email: event.currentTarget.value });
         } else if (event.currentTarget.name === 'subject') {
-            this.setState({ subject: event.currentTarget.value});
+            this.setState({ subject: event.currentTarget.value });
         } else if (event.currentTarget.name === 'where') {
-            this.setState({ where: event.currentTarget.value});
+            this.setState({ where: event.currentTarget.value });
         } else if (event.currentTarget.name === 'message') {
-            this.setState({ message: event.currentTarget.value});
+            this.setState({ message: event.currentTarget.value });
         }
     }
 

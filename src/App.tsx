@@ -3,7 +3,6 @@ import React, { Component, Suspense } from 'react';
 const Home = React.lazy(() => import('./views/home')) as any;
 const About = React.lazy(() => import('./views/about')) as any;
 const Contact = React.lazy(() => import('./views/contact')) as any;
-const NotFound = React.lazy(() => import('./views/notfound')) as any;
 const Navbar = React.lazy(() => import('./components/navbar')) as any;
 
 
@@ -35,8 +34,6 @@ class App extends Component<[], IApp> {
             pageContent = <About />;
         }  else if (view === 'contact') {
             pageContent = <Contact />;
-        } else {
-            pageContent = <NotFound />;
         }
         return (
             <div>
