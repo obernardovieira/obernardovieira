@@ -96,19 +96,19 @@ class Home extends Component {
         return [
             {
                 linkTo: 'https://www.linkedin.com/pulse/how-develop-human-friendly-blockchain-applications-bernardo-vieira/',
-                previewImage: 'https://media-exp1.licdn.com/dms/image/C5612AQHaSb8LQGBW7A/article-cover_image-shrink_720_1280/0?e=1576713600&v=beta&t=1R3whoO3g7xCuWXJ1vLhxfUqL2OAum5d0Sz7c8bWf1o',
+                previewImage: 'https://images.unsplash.com/photo-1522858547137-f1dcec554f55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9',
                 title: 'How to Develop Human-Friendly Blockchain Applications',
                 width: 6,
             },
             {
                 linkTo: 'https://www.linkedin.com/pulse/better-authentication-uport-bernardo-vieira/',
-                previewImage: 'https://media-exp1.licdn.com/dms/image/C5612AQGcKey1TU3a3Q/article-cover_image-shrink_720_1280/0?e=1576713600&v=beta&t=5ObKxAlskqKC2D2AxnN4ASVl_2dAxN4egUJ3p1SbcZ0',
+                previewImage: 'https://images.unsplash.com/photo-1446848547961-9fc8703b0911?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9',
                 title: 'Better Authentication with uPort',
                 width: 6,
             },
             {
                 linkTo: 'https://www.linkedin.com/pulse/how-i-won-consensys-blockchain-grants-hackathon-bernardo-vieira/',
-                previewImage: 'https://media-exp1.licdn.com/dms/image/C5612AQFGvEeqmHVkyw/article-cover_image-shrink_720_1280/0?e=1576713600&v=beta&t=ijK-vYV9iugs_8N0BVjKcYVKyRXpFwYf8Kl9b19kTZc',
+                previewImage: 'https://images.unsplash.com/photo-1503944168849-8bf86875bbd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9',
                 title: 'How I won a ConsenSys Blockchain Grants Hackathon',
                 width: 4,
             },
