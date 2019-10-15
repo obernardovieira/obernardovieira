@@ -22,9 +22,12 @@ class Navbar extends Component<{ navigateClick: any }, { displayMenu: string }> 
     }
 
     public handleClickMovePage = (event: any) => {
+        const { displayMenu } = this.state;
         event.preventDefault();
         this.props.navigateClick(event);
-        this.setState({ displayMenu: 'none' });
+        if (displayMenu !== '') {
+            this.setState({ displayMenu: 'none' });
+        }
     }
 
     public render() {
