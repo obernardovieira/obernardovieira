@@ -1,6 +1,6 @@
 {
     "name": "obernardovieira",
-    "version": "0.1.0",
+    "version": "0.0.1",
     "homepage": ".",
     "dependencies": {
         "@types/node": "12.7.11",

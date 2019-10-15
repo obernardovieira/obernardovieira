@@ -1,15 +1,5 @@
 import React, { Component } from 'react';
 
-import portfolio1 from './img/portfolio/1.jpg';
-import portfolio2 from './img/portfolio/2.jpg';
-import portfolio3 from './img/portfolio/3.jpg';
-import portfolio4 from './img/portfolio/4.jpg';
-import portfolio5 from './img/portfolio/5.jpg';
-import portfolio6 from './img/portfolio/6.jpg';
-import portfolio7 from './img/portfolio/7.jpg';
-import portfolio8 from './img/portfolio/8.jpg';
-
-
 class Home extends Component {
 
     public sendHackathons = (event: any) => {
@@ -44,11 +34,10 @@ class Home extends Component {
                 <section className="portfolio-section">
                     <div className="container">
                         <ul className="portfolio-filter controls">
-                            <li className="control" data-filter="all">All</li>
-                            <li className="control" data-filter=".web">Web design</li>
-                            <li className="control" data-filter=".digital">Digital design</li>
-                            <li className="control" data-filter=".rened">3D Renedering</li>
-                            <li className="control" data-filter=".brand">Brand Identity</li>
+                            <li className="control" data-filter="all">
+                                Hello, friend! Below are my most recent articles. Take a moment to read some.
+                                I know you will like it.
+                            </li>
                         </ul>
                     </div>
                     <div className="container-fluid p-md-0 ">
@@ -61,7 +50,7 @@ class Home extends Component {
                 <footer className="footer-section text-center">
                     <div className="container">
                         <h2 className="section-title mb-5">Let’s work together</h2>
-                        <a href="" className="site-btn">Get in touch</a>
+                        <a href="https://www.linkedin.com/in/obernardovieira/" className="site-btn">Get in touch</a>
                         <div className="social-links">
                             <a href="https://www.linkedin.com/in/obernardovieira/">
                                 <span className="fa fa-linkedin" />
@@ -91,7 +80,7 @@ class Home extends Component {
             const thisClassName = 'mix col-lg-' + article.width + ' col-md-6';
             return (<div key={article.previewImage} className={thisClassName}>
                 <a
-                    href={article.previewImage}
+                    href={article.linkTo}
                     className="portfolio-item set-bg"
                     style={{ backgroundImage: 'url(' + article.previewImage + ')' }}
                 >
@@ -106,44 +95,40 @@ class Home extends Component {
     private loadArticlesData = () => {
         return [
             {
-                previewImage: portfolio1,
-                title: '+ See Project',
+                linkTo: 'https://www.linkedin.com/pulse/how-develop-human-friendly-blockchain-applications-bernardo-vieira/',
+                previewImage: 'https://media-exp1.licdn.com/dms/image/C5612AQHaSb8LQGBW7A/article-cover_image-shrink_720_1280/0?e=1576713600&v=beta&t=1R3whoO3g7xCuWXJ1vLhxfUqL2OAum5d0Sz7c8bWf1o',
+                title: 'How to Develop Human-Friendly Blockchain Applications',
                 width: 6,
             },
             {
-                previewImage: portfolio2,
-                title: '+ See Project',
+                linkTo: 'https://www.linkedin.com/pulse/better-authentication-uport-bernardo-vieira/',
+                previewImage: 'https://media-exp1.licdn.com/dms/image/C5612AQGcKey1TU3a3Q/article-cover_image-shrink_720_1280/0?e=1576713600&v=beta&t=5ObKxAlskqKC2D2AxnN4ASVl_2dAxN4egUJ3p1SbcZ0',
+                title: 'Better Authentication with uPort',
                 width: 6,
             },
             {
-                previewImage: portfolio3,
-                title: '+ See Project',
+                linkTo: 'https://www.linkedin.com/pulse/how-i-won-consensys-blockchain-grants-hackathon-bernardo-vieira/',
+                previewImage: 'https://media-exp1.licdn.com/dms/image/C5612AQFGvEeqmHVkyw/article-cover_image-shrink_720_1280/0?e=1576713600&v=beta&t=ijK-vYV9iugs_8N0BVjKcYVKyRXpFwYf8Kl9b19kTZc',
+                title: 'How I won a ConsenSys Blockchain Grants Hackathon',
                 width: 4,
             },
             {
-                previewImage: portfolio4,
-                title: '+ See Project',
+                linkTo: 'https://www.linkedin.com/pulse/gentlemans-introduction-web3j-from-java-bernardo-vieira/',
+                previewImage: 'https://media-exp1.licdn.com/dms/image/C5612AQHJKfvhd0XPiw/article-cover_image-shrink_720_1280/0?e=1576713600&v=beta&t=aPgA4QmN7iYH-NfvTgQZMlUlKvj5yLG1Z-riXyMZPLI',
+                title: 'A Gentleman’s Introduction to Web3j from Java',
                 width: 4,
             },
             {
-                previewImage: portfolio5,
-                title: '+ See Project',
+                linkTo: 'https://www.linkedin.com/pulse/creating-upgradeable-smart-contracts-bernardo-vieira/',
+                previewImage: 'https://media-exp1.licdn.com/dms/image/C5612AQHk_3YVuUqJLA/article-cover_image-shrink_720_1280/0?e=1576713600&v=beta&t=0nJEjGo5IumsU5ZMSTfPgRlBpPXjZS-H0gvLSHfaj5I',
+                title: 'Creating Upgradeable Smart Contracts',
                 width: 4,
             },
             {
-                previewImage: portfolio6,
-                title: '+ See Project',
+                linkTo: 'https://www.linkedin.com/pulse/my-challenges-magic-ipfs-bernardo-vieira/',
+                previewImage: 'https://media-exp1.licdn.com/dms/image/C5612AQHDofoG2yy2aA/article-cover_image-shrink_720_1280/0?e=1576713600&v=beta&t=ntB5JURzDR6-R2KCstDnpXgsvL1UUmCWYrgGl9e1e4A',
+                title: 'My challenges with the magic of IPFS',
                 width: 12,
-            },
-            {
-                previewImage: portfolio7,
-                title: '+ See Project',
-                width: 6,
-            },
-            {
-                previewImage: portfolio8,
-                title: '+ See Project',
-                width: 6,
             },
         ];
     }
