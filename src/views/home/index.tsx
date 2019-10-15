@@ -96,37 +96,37 @@ class Home extends Component {
         return [
             {
                 linkTo: 'https://www.linkedin.com/pulse/how-develop-human-friendly-blockchain-applications-bernardo-vieira/',
-                previewImage: 'https://images.unsplash.com/photo-1522858547137-f1dcec554f55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9',
+                previewImage: 'https://images.unsplash.com/photo-1522858547137-f1dcec554f55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80',
                 title: 'How to Develop Human-Friendly Blockchain Applications',
                 width: 6,
             },
             {
                 linkTo: 'https://www.linkedin.com/pulse/better-authentication-uport-bernardo-vieira/',
-                previewImage: 'https://images.unsplash.com/photo-1446848547961-9fc8703b0911?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9',
+                previewImage: 'https://images.unsplash.com/photo-1446848547961-9fc8703b0911?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80',
                 title: 'Better Authentication with uPort',
                 width: 6,
             },
             {
                 linkTo: 'https://www.linkedin.com/pulse/how-i-won-consensys-blockchain-grants-hackathon-bernardo-vieira/',
-                previewImage: 'https://images.unsplash.com/photo-1503944168849-8bf86875bbd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9',
+                previewImage: 'https://images.unsplash.com/photo-1503944168849-8bf86875bbd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80',
                 title: 'How I won a ConsenSys Blockchain Grants Hackathon',
                 width: 4,
             },
             {
                 linkTo: 'https://www.linkedin.com/pulse/gentlemans-introduction-web3j-from-java-bernardo-vieira/',
-                previewImage: 'https://media-exp1.licdn.com/dms/image/C5612AQHJKfvhd0XPiw/article-cover_image-shrink_720_1280/0?e=1576713600&v=beta&t=aPgA4QmN7iYH-NfvTgQZMlUlKvj5yLG1Z-riXyMZPLI',
+                previewImage: 'https://images.unsplash.com/photo-1500576992153-0271099def59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
                 title: 'A Gentleman’s Introduction to Web3j from Java',
                 width: 4,
             },
             {
                 linkTo: 'https://www.linkedin.com/pulse/creating-upgradeable-smart-contracts-bernardo-vieira/',
-                previewImage: 'https://media-exp1.licdn.com/dms/image/C5612AQHk_3YVuUqJLA/article-cover_image-shrink_720_1280/0?e=1576713600&v=beta&t=0nJEjGo5IumsU5ZMSTfPgRlBpPXjZS-H0gvLSHfaj5I',
+                previewImage: 'https://www.loudwallpapers.com/wp-content/uploads/2019/01/women-in-yellow-hat-doing-work-hard-at-factory-.jpg',
                 title: 'Creating Upgradeable Smart Contracts',
                 width: 4,
             },
             {
                 linkTo: 'https://www.linkedin.com/pulse/my-challenges-magic-ipfs-bernardo-vieira/',
-                previewImage: 'https://media-exp1.licdn.com/dms/image/C5612AQHDofoG2yy2aA/article-cover_image-shrink_720_1280/0?e=1576713600&v=beta&t=ntB5JURzDR6-R2KCstDnpXgsvL1UUmCWYrgGl9e1e4A',
+                previewImage: 'https://images.unsplash.com/photo-1510759591315-6425cba413fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
                 title: 'My challenges with the magic of IPFS',
                 width: 12,
             },
