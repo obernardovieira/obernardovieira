@@ -28,9 +28,9 @@ class About extends Component {
                             <div className="col-lg-6">
                                 <p>Hello, I'm Bernardo. A fulltime blockchain developer and explorer of the ecosystem.
                                     Often joining hackathons and sometimes winning. I've been working as a developer
-                                    for a few years. Contributing to many open source projects and also maintaining
+                                    for years. Contributing to many open source projects and also maintaining
                                     some. I also like IoT and to discuss the future of the economy and society.
-                                    Thinking about how can I improve the future fascinates me.
+                                    Thinking about how I can improve the future fascinates me.
                                 </p>
                                 <div className="row mt-5">
                                     <div className="col-md-4">
@@ -45,7 +45,7 @@ class About extends Component {
                                     </div>
                                 </div>
                                 <figure className="mt-5">
-                                    <img src="img/sign.png" alt="" />
+                                    <span style={{fontFamily: 'amethyst', fontSize: '8em'}}>Bernardo Vieira</span>
                                 </figure>
                             </div>
                             <div className="col-lg-5 offset-lg-1">
@@ -60,7 +60,7 @@ class About extends Component {
                 <footer className="footer-section text-center">
                     <div className="container">
                         <h2 className="section-title mb-5">Let’s work together</h2>
-                        <a href="" className="site-btn">Get in touch</a>
+                        <a href="https://www.linkedin.com/in/obernardovieira/" className="site-btn">Get in touch</a>
                         <div className="social-links">
                             <a href="https://www.linkedin.com/in/obernardovieira/">
                                 <span className="fa fa-linkedin" />
