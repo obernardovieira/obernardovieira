@@ -2,38 +2,155 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Welcome to my personal website">
-    <meta name="keywords" content="obernardovieira,bernardo,vieira,developer,website, portfolio">
+    <meta name="description" content="Welcome to my personal website.">
+    <meta name="keywords" content="obernardovieira,bernardo,vieira,developer,website,portfolio">
     <meta name="author" content="Bernardo Vieira">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
     <title>obernardovieira</title>
 </head>
 
 <body>
-    <div class="bg"></div>
     <div class="content">
-        <span class="hello">Hello</span>
-        <br />
-        <br />
-        <br />
-        <span class="message">I'm Bernardo, <span>ethereum blockchain developer</span>, <span>writer</span> and
-            <span>speaker</span>.</span>
-        <br />
-        <br />
-        <br />
-        <div>
-            <a href="https://twitter.com/obernardovieira"><img class="social" src="img/social/twitter.svg"
-                    alt="obernardovieira twitter" /></a>
-            <a href="https://www.linkedin.com/in/obernardovieira/"><img class="social" src="img/social/linkedin.svg"
-                    alt="obernardovieira linkedin" /></a>
-            <a href="https://github.com/obernardovieira"><img class="social" src="img/social/github.svg"
-                    alt="obernardovieira github" /></a>
-            <a href="https://medium.com/@obernardovieira"><img class="social" src="img/social/medium.svg"
-                    alt="obernardovieira medium" /></a>
+        <span class="hello">Hello, I'm Bernardo</span>
+        <span class="message"><span>dapp developer</span>, <span>writer</span> and <span>speaker</span>.</span>
+        <span style="font-family: 'Caveat', sans-serif; font-size: 1.5em;">I also co-organize a meetup about P2P technology.</span>
+
+
+        <!-- thanks to https://codepen.io/Mamboleoo/pen/XgBvrJ-->
+        <ul id="social-links">
+            <li>
+                <button><a href="https://twitter.com/obernardovieira"><img height="30" src="img/social/twitter.svg"
+                            alt="obernardovieira twitter" /></a></button>
+            </li>
+            <li>
+                <button><a href="https://www.linkedin.com/in/obernardovieira/"><img height="30"
+                            src="img/social/linkedin.svg" alt="obernardovieira linkedin" /></a></button>
+            </li>
+            <li>
+                <button><a href="https://github.com/obernardovieira"><img height="30"
+                            src="img/social/github.svg" alt="obernardovieira github" /></a></button>
+            </li>
+            <li>
+                <button><a href="https://medium.com/@obernardovieira"><img height="30" src="img/social/medium.svg"
+                            alt="obernardovieira medium" /></a></button>
+            </li>
+        </ul>
+
+
+        <h3 class="projects-title">What I've been doing</h3>
+        <!-- thanks to https://codepen.io/yancy/pen/LBbvQZ-->
+        <div class="projects">
+            <div class="super-box">
+                <div class="container">
+                    <div class="box box-impactmarket">
+                        <div class="icon_bg"></div>
+                    </div>
+                    <div class="icon">
+                        <img height="30" src="img/social/medium.svg" alt="obernardovieira medium" />
+                    </div>
+                </div>
+                <div class="text">
+                    <p class="title">Impact Market</p>
+                </div>
+            </div>
+            <div class="super-box">
+                <div class="container">
+                    <div class="box box-hq20">
+                        <div class="icon_bg"></div>
+                    </div>
+                    <div class="icon">
+                        <img height="30" src="img/social/medium.svg" alt="obernardovieira medium" />
+                    </div>
+                </div>
+                <div class="text">
+                    <p class="title">HQ20</p>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+        class HoverButton {
+            constructor(el) {
+                this.el = el;
+                this.hover = false;
+                this.calculatePosition();
+                this.attachEventsListener();
+            }
+
+            attachEventsListener() {
+                window.addEventListener('mousemove', e => this.onMouseMove(e));
+                window.addEventListener('resize', e => this.calculatePosition(e));
+            }
+
+            calculatePosition() {
+                TweenMax.set(this.el, {
+                    x: 0,
+                    y: 0,
+                    scale: 1
+                });
+                const box = this.el.getBoundingClientRect();
+                this.x = box.left + (box.width * 0.5);
+                this.y = box.top + (box.height * 0.5);
+                this.width = box.width;
+                this.height = box.height;
+            }
+
+            onMouseMove(e) {
+                let hover = false;
+                let hoverArea = (this.hover ? 0.7 : 0.5);
+                let x = e.clientX - this.x;
+                let y = e.clientY - this.y;
+                let distance = Math.sqrt(x * x + y * y);
+                if (distance < (this.width * hoverArea)) {
+                    hover = true;
+                    if (!this.hover) {
+                        this.hover = true;
+                    }
+                    this.onHover(e.clientX, e.clientY);
+                }
+
+                if (!hover && this.hover) {
+                    this.onLeave();
+                    this.hover = false;
+                }
+            }
+
+            onHover(x, y) {
+                TweenMax.to(this.el, 0.4, {
+                    x: (x - this.x) * 0.4,
+                    y: (y - this.y) * 0.4,
+                    scale: 1.15,
+                    ease: Power2.easeOut
+                });
+                this.el.style.zIndex = 10;
+            }
+            onLeave() {
+                TweenMax.to(this.el, 0.7, {
+                    x: 0,
+                    y: 0,
+                    scale: 1,
+                    ease: Elastic.easeOut.config(1.2, 0.4)
+                });
+                this.el.style.zIndex = 1;
+            }
+        }
+
+        const btn1 = document.querySelector('#social-links li:nth-child(1) button');
+        new HoverButton(btn1);
+
+        const btn2 = document.querySelector('#social-links li:nth-child(2) button');
+        new HoverButton(btn2);
+
+        const btn3 = document.querySelector('#social-links li:nth-child(3) button');
+        new HoverButton(btn3);
+
+        const btn4 = document.querySelector('#social-links li:nth-child(4) button');
+        new HoverButton(btn4);
+    </script>
 </body>
 
 </html>
